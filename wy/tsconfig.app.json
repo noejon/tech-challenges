@@ -10,7 +10,8 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "types": [
-      "vitest/globals"
+      "vitest/globals",
+      "@testing-library/jest-dom"
     ],
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -26,6 +27,7 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
+    "src",
+    "mocks"
   ]
 }
