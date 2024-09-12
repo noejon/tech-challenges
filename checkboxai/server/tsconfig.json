@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2023",
-    "module": "commonjs",
+    "module": "NodeNext",
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,6 +16,7 @@
   ],
   "exclude": [
     "node_modules/**/*",
-    "dist/**/*"
+    "dist/**/*",
+    "src/**/*.test.ts"
   ],
 }

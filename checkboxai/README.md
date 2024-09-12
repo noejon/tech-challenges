@@ -65,7 +65,7 @@ The client is in [preact](https://preactjs.com/), it has the same APIs as react.
 
 The server is an express server.
 
-I use [ESlint](https://eslint.org/) for static code analysis and fix. And [prettier](https://prettier.io/) for code formatting. 
+I use [ESlint](https://eslint.org/) for static code analysis and fix. And [prettier](https://prettier.io/) for code formatting.
 
 I run unit tests and my linting in pre-commit hooks using [Husky](https://typicode.github.io/husky/).
 
