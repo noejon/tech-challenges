@@ -1,14 +1,7 @@
 import 'dotenv/config';
-import cors from 'cors';
-import express from 'express';
+import { app } from './app';
 
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4242;
 
 app.listen(PORT, () => {
   console.info('Server is running on port ' + PORT);
