@@ -9,16 +9,20 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "cd ../.. && husky checkboxai/client/.husky"
   },
   "dependencies": {
     "preact": "^10.23.1"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.1.1",
     "@eslint/js": "^9.9.0",
     "@preact/preset-vite": "^2.9.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "eslint": "^9.9.0",
@@ -27,10 +31,11 @@
     "eslint-plugin-jest-dom": "^5.4.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
     "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-testing-library": "^6.3.0",
     "globals": "^15.9.0",
+    "husky": "^9.1.6",
     "jsdom": "^25.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",

@@ -1,3 +1,4 @@
+import { fixupPluginRules } from '@eslint/compat';
 import js from '@eslint/js';
 import globals from 'globals';
 import importPlugin from 'eslint-plugin-import';
@@ -17,7 +18,16 @@ export default tseslint.config(
   },
   {
     files: ['**/*.{test,spec}.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-    ...testingLibrary.configs['flat/react'],
+    plugins: {
+      'testing-library': fixupPluginRules({
+        rules: testingLibrary.rules,
+      }),
+    },
+    rules: {
+      ...testingLibrary.configs['flat/react'].rules,
+      'testing-library/no-container': 'off',
+      'testing-library/no-node-access': 'off',
+    },
   },
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],

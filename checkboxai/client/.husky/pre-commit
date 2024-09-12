@@ -1,0 +1,3 @@
+cd checkboxai/client
+pnpm test
+pnpm lint
