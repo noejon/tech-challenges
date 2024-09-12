@@ -54,3 +54,29 @@ We’ll be looking at this as a demonstration of the type of code you would be c
 - Understanding & effective implementation of best practices around general programming paradigms
 - How you addressed (or planned to address) the risks highlighted
 - Demonstrated understanding of other tasks you would do if you had time & how you would implement them
+
+## Preparing for the task
+
+### Setup
+
+The application is comprised of a client and a server.
+
+The client is in [preact](https://preactjs.com/), it has the same APIs as react.
+
+The server is an express server.
+
+I use [ESlint](https://eslint.org/) for static code analysis and fix. And [prettier](https://prettier.io/) for code formatting. 
+
+I run unit tests and my linting in pre-commit hooks using [Husky](https://typicode.github.io/husky/).
+
+Docker
+
+### Understanding the requirements and ideation
+
+#### Creating tasks
+
+- User should be able to create a new task, including the following fields (Required)
+  - Name
+  - Description
+  - Due date
+
